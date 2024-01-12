@@ -8,6 +8,8 @@ public class SbApp20240109Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SbApp20240109Application.class, args);
+
+
 	}
 
 }
