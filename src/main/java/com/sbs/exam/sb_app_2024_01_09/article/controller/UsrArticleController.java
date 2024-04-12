@@ -61,6 +61,11 @@ public class UsrArticleController {
 
     return article;
   }
+
+  private void deleteArticle(int id) {
+    Article article = getArticle(id);
+    articles.remove(article);
+  }
   //서비스 메서드 끝
 
   //액션 메서드 시작
@@ -93,10 +98,6 @@ public class UsrArticleController {
     return id + "번 게시물을 삭제하였습니다.";
   }
 
-  private void deleteArticle(int id) {
-    Article article = getArticle(id);
-    articles.remove(article);
-  }
 
 
 //액션 메서드 끝
